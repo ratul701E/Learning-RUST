@@ -9,7 +9,8 @@ fn main() {
     // println!("{}",is_even(215));
     //ifelse(104);
     //_loop();
-    _while();
+    //_while();
+    _for();
 
 }
 
@@ -93,4 +94,17 @@ fn _while() {
         print!("{} ", i);
         i += 2;
     }
+}
+
+fn _for(){
+    let a: [i8; 5] = [1, 2, 3, 4, 5];
+    for value in a.iter() {
+        print!("{} ", value);
+    }
+    println!()
+
+    // let tup = (1, 2, 4, 5, 89);
+    // for value_of_index in [1, 2, 3, 4, 5].iter() {
+    //     print!("{} ", tup.value_of_index);
+    // }
 }
