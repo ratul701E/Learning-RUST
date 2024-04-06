@@ -10,7 +10,9 @@ fn main() {
     //ifelse(104);
     //_loop();
     //_while();
-    _for();
+    //_for();
+    ownership_transfer_example();
+
 
 }
 
@@ -108,3 +110,12 @@ fn _for(){
     //     print!("{} ", tup.value_of_index);
     // }
 }
+
+fn ownership_transfer_example() {
+    let str: String = String::from("Hello");
+    //let str2 = str; // moved
+    let str2 = str.clone();
+    println!("{}", str);
+
+}
+
